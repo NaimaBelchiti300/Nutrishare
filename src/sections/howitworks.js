@@ -6,7 +6,7 @@ export default function HowItWorks() {
   return (
     <div className="px-5 md:px-20 py-16 bg-gray-50">
       {/* Titre principal */}
-      <h1 className="text-center text-4xl md:text-5xl font-extrabold text-gray-800 font-serif mb-16">
+      <h1 className="text-center text-4xl md:text-5xl font-extrabold text-gray font-serif mb-16">
         Comment ça marche ?
       </h1>
 
@@ -18,10 +18,10 @@ export default function HowItWorks() {
           alt="Créer un compte" 
         />
         <div className="md:w-1/2 text-center md:text-left font-lora">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            1. Connectez-vous à votre compte
+        <h2 className="text-3xl font-bold text-gray font-serif mb-6">
+        1. Connectez-vous à votre compte
           </h2>
-          <p className="text-xl text-gray-700 leading-relaxed mb-6">
+          <p className="text-xl text-gray leading-relaxed mb-6">
             Accédez à votre espace personnel en vous connectant avec vos identifiants.  
             Si vous êtes nouveau, créez un compte en quelques clics !
           </p>
@@ -44,10 +44,10 @@ export default function HowItWorks() {
           alt="Explorer les recettes" 
         />
         <div className="md:w-1/2 text-center md:text-left font-lora">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            2. Explorez les recettes
+        <h2 className="text-3xl font-bold text-gray font-serif mb-6">
+        2. Explorez les recettes
           </h2>
-          <p className="text-xl text-gray-700 leading-relaxed mb-6">
+          <p className="text-xl text-gray leading-relaxed mb-6">
             Découvrez des centaines de recettes adaptées à vos besoins. Vous pouvez également ajouter vos propres recettes et les partager avec d'autres utilisateurs.
           </p>
           <div className="flex flex-row space-x-6">
@@ -63,16 +63,18 @@ export default function HowItWorks() {
 
       {/* Étape 3 */}
       <div className="flex flex-col md:flex-row items-center md:space-x-14 space-y-10 md:space-y-0 mt-20">
+        
         <img 
           src={step3} 
           className="w-full md:w-1/2 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" 
           alt="Suivre ses repas" 
         />
+        
         <div className="md:w-1/2 text-center md:text-left font-lora">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-gray font-serif mb-6">
             3. Suivez vos repas
           </h2>
-          <p className="text-xl text-gray-700 leading-relaxed mb-6">
+          <p className="text-xl text-gray leading-relaxed mb-6">
             Ajoutez vos repas au journal alimentaire et suivez votre apport calorique et nutritionnel en un coup d'œil.
           </p>
           <div className="flex flex-row space-x-6">

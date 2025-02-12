@@ -14,7 +14,8 @@ export default function Herosection() {
         </div>
       </div>
       <div className="">
-      <img src={imagebanner} className='pl-10 w-[100%]'/>
+      <img src={imagebanner} className='pl-10 w-[100%] '/>
+      
       </div>
     </div>
   );
