@@ -2,13 +2,13 @@ import logo from "../images/logo.png";
 export default function Navbar() {
   return (
     <>
-      <div className="flex justify-center items-center w-full font-lora  pt-1">
+      <div className="flex justify-center items-center w-full font-lora  pt-5">
         <div className="pr-20 ">
           <img src={logo} className="w-50 " />
         </div>
         <div className=" space-x-8 text-lg">
           <a>Home</a>
-          <a>About Us </a>
+          <a>Features</a>
           <a> How It Works</a>
           <a>Recipes</a>
           <a>Reviews </a>
