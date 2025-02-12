@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         verte: '#8CA658',
         gray: '#424242',
+        graylight:'#E8E8E8'
       },
     },
   },

@@ -1,8 +1,12 @@
-import './App.css';
+import Herosection from "./sections/herosection";
+import Navbar from "./sections/navbar";
 
 function App() {
   return (
-     <h1 className='font-lora text-xl'>test</h1>
+    <div>
+<Navbar/>
+<Herosection/>
+    </div>
   );
 }
 
