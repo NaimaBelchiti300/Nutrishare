@@ -1,3 +1,4 @@
+import BannerImage from "./sections/bannerimage";
 import Fonctionalite from "./sections/fonctionalite";
 import Herosection from "./sections/herosection";
 import HowItWorks from "./sections/howitworks";
@@ -15,7 +16,9 @@ function App() {
 <HowItWorks/>
 <Recipes/>
 <RecipeSection/>
-<Populairerecepe/>
+<br/>
+<BannerImage/>
+{/* <Populairerecepe/> */}
     </div>
   );
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import recepe2 from '../images/recep2.png'
 const RecipeSection = () => {
   return (
-    <div className="flex justify-center items-center px-20 space-x-5 w-full">
+<>
+<div className="flex justify-center items-center px-20 space-x-5 w-full">
       {/* Image Section */}
       <div className="w-1/2">
         <img src={recepe2} className="w-[100%] rounded-e-full" />
@@ -35,13 +36,15 @@ const RecipeSection = () => {
 
        </div>
 
-        {/* Buttons */}
-        <div className="flex justify-start items-center space-x-10">
-          <button className="border-2 border-gray text-gray px-5 py-2 rounded-md">Partager cette recette</button>
-          <button className="bg-gray border-2 text-graylight px-5 py-2 rounded-md">Voir plus de recettes</button>
-        </div>
+       
       </div>
+              
     </div>
+    {/* Buttons */}
+    <div className="flex justify-start items-center space-x-10 w-full px-32 pt-10">
+    <button className="bg-verte border-verte font-semibold border-2 text-graylight px-5 w-full py-3 font-serif rounded-md">Voir plus de recettes</button>
+  </div>
+</>
   );
 };
 
