@@ -6,6 +6,7 @@ import Navbar from "./sections/navbar";
 import Populairerecepe from "./sections/populairerecep";
 import RecipeSection from "./sections/recepesection2";
 import Recipes from "./sections/recipes";
+import VidioImage from "./sections/vidiobanner";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
 <Herosection/>
 <Fonctionalite/>
 <HowItWorks/>
+<BannerImage/>
 <Recipes/>
 <RecipeSection/>
-<BannerImage/>
+<VidioImage/>
 <Populairerecepe/>
     </div>
   );
