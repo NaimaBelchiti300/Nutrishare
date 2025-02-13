@@ -16,9 +16,8 @@ function App() {
 <HowItWorks/>
 <Recipes/>
 <RecipeSection/>
-<br/>
 <BannerImage/>
-{/* <Populairerecepe/> */}
+<Populairerecepe/>
     </div>
   );
 }
