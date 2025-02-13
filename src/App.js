@@ -3,6 +3,7 @@ import Herosection from "./sections/herosection";
 import HowItWorks from "./sections/howitworks";
 import Navbar from "./sections/navbar";
 import Populairerecepe from "./sections/populairerecep";
+import RecipeSection from "./sections/recepesection2";
 import Recipes from "./sections/recipes";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 <Fonctionalite/>
 <HowItWorks/>
 <Recipes/>
+<RecipeSection/>
 <Populairerecepe/>
     </div>
   );
