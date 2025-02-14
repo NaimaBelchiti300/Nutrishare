@@ -9,7 +9,7 @@ export default function BannerImage() {
       />
       
 
-      <div className="absolute top-10 left-0 right-0 z-20 pt-36 flex flex-col justify-center items-center text-white text-xl p-4">
+      <div className="absolute top-3 left-0 right-0 z-20 pt-36 flex flex-col justify-center items-center text-white text-xl p-4">
         <p className="font-serif font-bold text-5xl px-24 text-center text-white">
           Transformez votre quotidien avec NutriShare  l'application qui vous aide à manger équilibré, suivre vos calories et atteindre vos objectifs de santé en toute simplicité !
         </p>

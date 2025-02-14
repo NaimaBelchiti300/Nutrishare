@@ -42,7 +42,7 @@ const RecipeSection = () => {
     </div>
     {/* Buttons */}
     <div className="flex justify-start items-center space-x-10 w-full px-32 pt-10">
-    <button className="bg-verte border-verte font-semibold border-2 text-graylight px-5 w-full py-3 font-serif rounded-md">Voir plus de recettes</button>
+    <button className="text-lg px-9 py-3 bg-verte rounded-lg text-white hover:bg-gray-700 transition duration-300 font-serif w-full">Voir plus de recettes</button>
   </div>
 </>
   );
