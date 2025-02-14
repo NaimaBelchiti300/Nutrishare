@@ -45,6 +45,8 @@ const Populairerecepe = () => {
         button1: 'Temps à préparer : 1h30', 
         button2: 'Calories de la recette : 600kcal' 
     },
+
+    
 ];
 
 
@@ -78,11 +80,15 @@ const Populairerecepe = () => {
         {" "}
         les recette les plus popolaires
       </h1>
+      <div className="flex justify-end items-end pt-20">
+      <a href="#" className="underline font-serif font-bold text-sm  text-gray">voir tout les recettes</a>
+
+      </div>
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div
             key={index}
-            className="flex justify-start items-center px-20 pt-16 w-full"
+            className="flex justify-start items-center px-20 pt-3 w-full"
           >
             <div className="bg-white rounded-xl shadow-md overflow-hidden w-96 space-x-0">
               <img
