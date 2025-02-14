@@ -8,6 +8,7 @@ import RecipeSection from "./sections/recepesection2";
 import Recipes from "./sections/recipes";
 import FormReviews from "./sections/formreviews";
 import VidioImage from "./sections/vidiobanner";
+import Footer from "./sections/footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 <VidioImage/>
 <Populairerecepe/>
 <FormReviews/>
+<Footer/>
     </div>
   );
 }

@@ -27,11 +27,11 @@ export default function FormReviews() {
    </div>
    <div className="space-y-2">
    <h3 className="font-serif text-gray text-lg"> nom complet</h3>
-   <input type="text" placeholder="Entrez votre nom complet" className="bg-graylight py-2 rounded-md w-full focus:bg-white px-10 text-start"/>
+   <input type="text" placeholder="Entrez votre nom complet" className="bg-graylight py-2 rounded-md w-full focus:bg-white px-5 text-start"/>
    <h3 className="font-serif text-gray text-lg"> adresse email</h3>
-   <input type="email" placeholder="Entrez votre adresse email" className="bg-graylight py-2 rounded-md w-full focus:bg-white px-10 text-start"/>
+   <input type="email" placeholder="Entrez votre adresse email" className="bg-graylight py-2 rounded-md w-full focus:bg-white px-5 text-start"/>
    <h3 className="font-serif text-gray text-lg">Partagez votre avis ou commentaire ici</h3>
-   <input type="email" placeholder="Entrez votre avis ou commentaire ici" className="bg-graylight py-2 rounded-md w-full focus:bg-white px-10 text-start"/>
+   <input type="email" placeholder="Entrez votre avis ou commentaire ici" className="bg-graylight py-2 rounded-md w-full focus:bg-white px-5 text-start"/>
    </div>
 <div className="flex justify-start items-center w-full">
 <button className="font-serif w-full rounded-md text-graylight bg-verte px-5 py-2 ">Envoyer mon avis</button>
