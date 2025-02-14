@@ -18,7 +18,7 @@ export default function HowItWorks() {
           alt="Créer un compte" 
         />
         <div className="md:w-1/2 text-center md:text-left font-lora">
-        <h2 className="text-3xl font-bold text-gray font-serif mb-6">
+        <h2 className="text-3xl font-bold text-black font-serif mb-6">
         1. Connectez-vous à votre compte
           </h2>
           <p className="text-xl text-gray leading-relaxed mb-6">
@@ -44,7 +44,7 @@ export default function HowItWorks() {
           alt="Explorer les recettes" 
         />
         <div className="md:w-1/2 text-center md:text-left font-lora">
-        <h2 className="text-3xl font-bold text-gray font-serif mb-6">
+        <h2 className="text-3xl font-bold text-black font-serif mb-6">
         2. Explorez les recettes
           </h2>
           <p className="text-xl text-gray leading-relaxed mb-6">
@@ -71,7 +71,7 @@ export default function HowItWorks() {
         />
         
         <div className="md:w-1/2 text-center md:text-left font-lora">
-          <h2 className="text-3xl font-bold text-gray font-serif mb-6">
+          <h2 className="text-3xl font-bold text-black font-serif mb-6">
             3. Suivez vos repas
           </h2>
           <p className="text-xl text-gray leading-relaxed mb-6">

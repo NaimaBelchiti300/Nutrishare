@@ -2,8 +2,8 @@ import React from 'react';
 import recepe2 from '../images/recep2.png'
 const RecipeSection = () => {
   return (
-<>
-<div className="flex justify-center items-center px-20 space-x-5 w-full">
+< div className='pt-10'>
+<div className="flex justify-center items-center px-20 space-x-5 w-full h-screen">
       {/* Image Section */}
       <div className="w-1/2">
         <img src={recepe2} className="w-[100%] rounded-e-full" />
@@ -11,14 +11,14 @@ const RecipeSection = () => {
       </div>
       
       {/* Text Content */}
-      <div className="w-1/2 space-y-5 mt-9">
+      <div className="w-1/2 space-y-5 mt-5">
         <h2 className="text-gray text-4xl text-start font-serif font-bold">Inspirez-vous des recettes de la communauté</h2>
         <span className="text-2xl font-medium text-start font-lora text-gray ">Recette de Toast Avocat & Œuf : Le Mélange Parfait pour Votre Santé !</span>
         <p className="text-gray font-medium font-lora w-12/12 text-start">Cette recette de toast avocat & œuf est une véritable bombe nutritionnelle, parfaite pour commencer votre journée ou comme encas sain. L'avocat est une source exceptionnelle de graisses saines, tandis que l'œuf apporte des protéines de haute qualité pour soutenir vos muscles. Ensemble, ces ingrédients vous offrent un mélange équilibré pour nourrir votre corps et booster votre énergie .</p>
         
         {/* Valeurs Nutritionnelles */}
         <h3 className='font-semibold font-lora text-gray'> Valeurs Nutritionnelles :</h3>
-       <div className='flex flex-col justify-start items-center space-y-3'>
+       <div className='flex flex-col justify-start items-center space-y-3 '>
        <div className='flex justify-start items-center space-x-1'>
           <span className="bg-verte border-2 border-solid text-white px-5 py-2 rounded-md whitespace-nowrap">Calories : 350 kcal</span>
           <span className="border-2 border-solid border-verte px-5 py-2 rounded-md whitespace-nowrap">Protéines : 15g</span>
@@ -44,7 +44,7 @@ const RecipeSection = () => {
     <div className="flex justify-start items-center space-x-10 w-full px-32 pt-10">
     <button className="text-lg px-9 py-3 bg-verte rounded-lg text-white hover:bg-gray-700 transition duration-300 font-serif w-full">Voir plus de recettes</button>
   </div>
-</>
+</div>
   );
 };
 
