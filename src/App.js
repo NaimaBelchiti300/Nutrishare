@@ -6,6 +6,7 @@ import Navbar from "./sections/navbar";
 import Populairerecepe from "./sections/populairerecep";
 import RecipeSection from "./sections/recepesection2";
 import Recipes from "./sections/recipes";
+import FormReviews from "./sections/formreviews";
 import VidioImage from "./sections/vidiobanner";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 <RecipeSection/>
 <VidioImage/>
 <Populairerecepe/>
+<FormReviews/>
     </div>
   );
 }

@@ -75,7 +75,7 @@ const Populairerecepe = () => {
   };
 
   return (
-    <div className="  px-14 w-full h-screen pt-16 ">
+    <div className="  px-14 w-full h-full pt-16 ">
       <h1 className="text-center font-serif text-4xl font-semibold text-verte">
         {" "}
         les recette les plus popolaires

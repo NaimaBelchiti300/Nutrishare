@@ -1,6 +1,4 @@
 import recep1 from '../images/heroimage.png'
-import recep2 from '../images/recep2.png'
-import recepe3 from '../images/recep3.PNG'
 export default function Recipes(){
     return(
         <div className='flex justify-center items-center font-serif px-20 space-x-10 pt-10'>
