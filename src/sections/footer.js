@@ -1,5 +1,6 @@
 import logo from "../images/logo.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from 'react-scroll'; // Import Link from react-scroll
 
 export default function Footer() {
   return (
@@ -21,13 +22,11 @@ export default function Footer() {
         {/* Section 2 : Navigation rapide */}
         <div className="flex flex-col justify-start items-center space-y-5 font-serif font-bold text-lg text-gray">
           <div className="text-start flex flex-col ">
-          <a href="#" className="underline">Accueil</a>
-          <a href="#">Fonctionnalités</a>
-          <a href="#">Comment ça marche</a>
-          <a href="#">Recettes</a>
-          <a href="#">Avis</a>
-          <a href="#">Se connecter</a>
-          <a href="#">S'inscrire</a>
+           <Link to="home" smooth={true} duration={500} className='cursor-pointer'>Accueil</Link>
+                      <Link to="features" smooth={true} duration={500} className='cursor-pointer'>Fonctionnalités</Link>
+                      <Link to="how-it-works" smooth={true} duration={500} className='cursor-pointer'>Comment ça fonctionne</Link>
+                      <Link to="recipes" smooth={true} duration={500} className='cursor-pointer'>Recettes</Link>
+                      <Link to="reviews" smooth={true} duration={500} className='cursor-pointer'>Avis</Link>
           </div>
         </div>
 
