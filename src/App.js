@@ -9,7 +9,7 @@ import Recipes from "./sections/recipes";
 import FormReviews from "./sections/formreviews";
 import VidioImage from "./sections/vidiobanner";
 import Footer from "./sections/footer";
-
+import ReviewsCarousel from "./sections/reveiws";
 function App() {
   return (
     <div>
@@ -22,6 +22,7 @@ function App() {
 <RecipeSection/>
 <VidioImage/>
 <Populairerecepe/>
+<ReviewsCarousel/>
 <FormReviews/>
 <Footer/>
     </div>
