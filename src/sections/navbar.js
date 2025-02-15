@@ -2,22 +2,26 @@ import logo from "../images/logo.png";
 export default function Navbar() {
   return (
     <>
-      <div className="flex justify-center items-center w-full font-lora  pt-5">
-        <div className="pr-20 ">
-          <img src={logo} className="w-50 " />
+      <div className="flex justify-center items-center w-full font-serif  pt-5">
+        <div className="pr-10 ">
+          <img src={logo} className="w-50" />
         </div>
-        <div className=" space-x-8 text-lg">
-          <a>Home</a>
-          <a>Features</a>
-          <a> How It Works</a>
-          <a>Recipes</a>
-          <a>Reviews </a>
-          <button className="w-auto px-7 bg-gray rounded-sm text-white">
-            <a>Sign In</a>
+        <div className=" flex space-x-8 text-md">
+         <div className="space-x-5 pt-0.5 font-bold">
+         <a>Accueil</a>
+          <a>Fonctionnalités</a>
+          <a> Comment ça fonctionne</a>
+          <a>Recettes</a>
+          <a>Avis </a>
+         </div>
+        <div className="space-x-2 ">
+        <button className="w-auto px-5 py-0.5 bg-gray rounded-md text-white">
+            <a> Se connecter</a>
           </button>
-          <button className="w-auto px-7 bg-gray rounded-sm text-white">
-            <a>Sign Up</a>
+          <button className="w-auto px-5 py-0.5 bg-gray rounded-md text-white">
+            <a>S'inscrire</a>
           </button>{" "}
+        </div>
         </div>
       </div>
 
