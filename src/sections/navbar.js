@@ -5,7 +5,8 @@ import logo from "../images/logo.png";
 export default function Navbar() {
   return (
     <>
-      <div className="flex justify-center items-center w-full font-serif pt-5" id='home'>
+          <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-center items-center font-serif pt-5">
+
         <div className="pr-10">
           <img src={logo} className="w-50" alt="logo" />
         </div>
