@@ -1,31 +1,18 @@
-import BannerImage from "./sections/bannerimage";
-import Fonctionalite from "./sections/fonctionalite";
-import Herosection from "./sections/herosection";
-import HowItWorks from "./sections/howitworks";
-import Navbar from "./sections/navbar";
-import Populairerecepe from "./sections/populairerecep";
-import RecipeSection from "./sections/recepesection2";
-import Recipes from "./sections/recipes";
-import FormReviews from "./sections/formreviews";
-import VidioImage from "./sections/vidiobanner";
-import Footer from "./sections/footer";
-import ReviewsCarousel from "./sections/reveiws";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+
+import Under from './sections/under';
+import Home from './sections/home';
 function App() {
   return (
-    <div>
-<Navbar/>
-<Herosection/>
-<Fonctionalite/>
-<HowItWorks/>
-<BannerImage/>
-<Recipes/>
-<RecipeSection/>
-<VidioImage/>
-<Populairerecepe/>
-<ReviewsCarousel/>
-<FormReviews/>
-<Footer/>
-    </div>
+    <Router> {/* Assure-toi d'envelopper toute l'application avec Router */}
+      <div>
+        
+        <Routes> 
+        <Route path="/" element={<Home/>}/>         
+         <Route path="/under" element={<Under />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

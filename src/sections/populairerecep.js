@@ -7,6 +7,7 @@ import r2 from "../images/recette2.PNG";
 import r3 from "../images/recette3.PNG";
 import r4 from "../images/recette4.PNG";
 import r5 from "../images/recette5.PNG";
+import { Link } from "react-router-dom";
 
 const Populairerecepe = () => {
   const cards = [
@@ -81,7 +82,9 @@ const Populairerecepe = () => {
         les recette les plus popolaires
       </h1>
       <div className="flex justify-end items-end pt-20">
-      <a href="#" className="underline font-serif font-bold text-sm  text-gray">voir tout les recettes</a>
+      <Link to='/under' className="underline font-serif font-bold text-sm text-gray-500">
+  voir toutes les recettes
+</Link>
 
       </div>
       <Slider {...settings}>
