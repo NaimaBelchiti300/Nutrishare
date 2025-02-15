@@ -5,7 +5,7 @@ import icon4 from '../images/icon4.png'
 import icon5 from '../images/icon5.png'
 export default function Fonctionalite() {
   return (
-    <div className="px-5 md:px-20 py-10">
+    <div className="px-5 md:px-20 py-10" id="features">
       <h1 className="text-center font-serif font-bold text-gray text-3xl">
         Qu’est-ce que NutriShare peut faire pour vous ?
       </h1>

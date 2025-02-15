@@ -13,7 +13,6 @@ function Under() {
         </Link>
       </button>
       </div>
-
       <div className="min-h-screen flex justify-center items-center bg-gray-100 pb-44">
         <div className="text-center p-6 bg-white rounded-lg shadow-xl">
           <h1 className="text-4xl text-red-500 font-bold">Page en construction</h1>

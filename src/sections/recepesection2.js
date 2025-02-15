@@ -2,7 +2,7 @@ import React from 'react';
 import recepe2 from '../images/recep2.png'
 const RecipeSection = () => {
   return (
-< div className='pt-10'>
+< div className='pt-0' id='recipes'>
 <div className="flex justify-center items-center px-20 space-x-5 w-full h-screen">
       {/* Image Section */}
       <div className="w-1/2">

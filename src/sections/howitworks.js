@@ -4,7 +4,7 @@ import step3 from "../images/step3.PNG";
 
 export default function HowItWorks() {
   return (
-    <div className="px-5 md:px-20 py-16 bg-gray-50">
+    <div className="px-5 md:px-20 py-16 bg-gray-50" id="how-it-works">
       {/* Titre principal */}
       <h1 className="text-center text-4xl md:text-5xl font-extrabold text-gray font-serif mb-16">
         Comment ça marche ?
