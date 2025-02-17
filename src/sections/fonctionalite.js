@@ -5,14 +5,14 @@ import icon4 from '../images/icon4.png'
 import icon5 from '../images/icon5.png'
 export default function Fonctionalite() {
   return (
-    <div className="px-5 md:px-20 py-10" id="features">
+    <div className="px-5 md:px-20 py-10" id="features" data-aos="fade-up" data-aos-once="false"> 
       <h1 className="text-center font-serif font-bold text-gray text-3xl">
         Qu’est-ce que NutriShare peut faire pour vous ?
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-10" data-aos="fade-left" data-aos-once="false">
           {/* Carte 5 */}
-          <div className="border border-graylight p-5 rounded-xl shadow-md ">
+          <div className="border border-graylight p-5 rounded-xl shadow-md " >
           <div className="flex items-center space-x-3 mb-3">
             <img src={icon5} className="w-10" alt="Icon" />
             <h2 className="font-semibold text-xl font-lora">Créez votre profil et connectez-vous</h2>
@@ -22,8 +22,8 @@ export default function Fonctionalite() {
           </p>
         </div>
         {/* Carte 1 */}
-        <div className="border border-graylight p-5 rounded-xl shadow-md">
-          <div className="flex items-center space-x-3 mb-3">
+        <div className="border border-graylight p-5 rounded-xl shadow-md" data-aos="fade-right" data-aos-once="false">
+          <div className="flex items-center space-x-3 mb-3" >
             <img src={icon1} className="w-10" alt="Icon" />
             <h2 className="font-semibold text-xl font-lora">Partagez vos recettes avec la communauté</h2>
           </div>
@@ -33,8 +33,8 @@ export default function Fonctionalite() {
         </div>
 
         {/* Carte 2 */}
-        <div className="border border-graylight p-5 rounded-xl shadow-md">
-          <div className="flex items-center space-x-3 mb-3">
+        <div className="border border-graylight p-5 rounded-xl shadow-md" data-aos="fade-left" data-aos-once="false">
+          <div className="flex items-center space-x-3 mb-3" >
             <img src={icn2} className="w-10" alt="Icon" />
             <h2 className="font-semibold font-lora text-xl">Suivi des calories et macronutriments</h2>
           </div>
@@ -44,7 +44,7 @@ export default function Fonctionalite() {
         </div>
 
         {/* Carte 3 */}
-        <div className="border border-graylight p-5 rounded-xl shadow-md">
+        <div className="border border-graylight p-5 rounded-xl shadow-md" data-aos="fade-right" data-aos-once="false">
           <div className="flex items-center space-x-3 mb-3">
             <img src={icon3} className="w-10" alt="Icon" />
             <h2 className="font-semibold text-xl font-lora">Filtrage des recettes par besoins nutritionnels</h2>
@@ -55,7 +55,7 @@ export default function Fonctionalite() {
         </div>
 
         {/* Carte 4 */}
-        <div className="border border-graylight p-5 rounded-xl shadow-md">
+        <div className="border border-graylight p-5 rounded-xl shadow-md" data-aos="fade-left" data-aos-once="false">
           <div className="flex items-center space-x-3 mb-3">
             <img src={icon4} className="w-10" alt="Icon" />
             <h1 className="font-semibold text-[22px] font-lora">Suivi de vos repas quotidiens</h1>

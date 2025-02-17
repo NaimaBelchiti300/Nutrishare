@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom";
 import imagebanner from "../images/Beige_Black_Simple_Modern_Healthy_Food_Introduction_Instagram_Story-removebg-preview.png";
-
+import AOS from 'aos';
+import { useEffect } from "react";
+import 'aos/dist/aos.css'; // Import des styles d'AOS
 export default function Herosection() {
+  
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Durée de l'animation
+      easing: "ease-in-out", // Easing de l'animation
+      once: false, // Animations trigger multiple times
+    });
+
+    // Add a scroll listener to refresh AOS when scrolling
+   })
+  
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center font-lora space-x-5 pt-0" id="home">
+    <div className="flex md:flex-row flex-col justify-center items-center font-lora space-x-5 pt-0" id="home" data-aos="fade-up">
       <div className="md:w-1/2 w-full space-y-7 md:pt-5 pt-36">
         <h1 className="md:text-4xl text-xl font-extrabold text-gray md:text-start text-center font-serif">
           NutriShare – Partagez vos recettes et suivez votre nutrition

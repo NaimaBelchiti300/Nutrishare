@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // 4940682-hd_1920_1080_24fps
 export default function VidioImage() {
   return (
-   <div className="pt-16">
+   <div className="pt-16" data-aos="zoom-out" data-aos-once="false">
      <div className="relative md:h-screen md:px-10 px-5 py-0 md:pt-10 ">
       <video
         src={videoBanner}

@@ -32,8 +32,8 @@ export default function FormReviews() {
   };
 
   return (
-    <div className="w-full pt-28 flex md:flex-row  flex-col md:space-x-5 space-y-0  md:px-20 px-10 md:pb-0 pb-11">
-      <div className="md:w-2/2 ">
+    <div className="w-full pt-28 flex md:flex-row  flex-col md:space-x-5 space-y-0  md:px-20 px-10 md:pb-0 pb-11" data-aos="fade-in" data-aos-once="false">
+      <div className="md:w-2/2 " data-aos="fade-left" data-aos-once="false">
         <div className="grid grid-cols-2  gap-2">
           <div className="grid grid-rows-3 gap-0 pt-14">
             <div className="w-full">
@@ -49,7 +49,7 @@ export default function FormReviews() {
         </div>
       </div>
 
-      <div className="md:w-1/2 w-full space-y-5 md:pt-14 ">
+      <div className="md:w-1/2 w-full space-y-5 md:pt-14 " data-aos="fade-right" data-aos-once="false">
         <div className="space-y-1">
           <h1 className="font-bold font-serif md:text-4xl text-xl text-gray">
             Nous Aimerions Avoir Votre Avis

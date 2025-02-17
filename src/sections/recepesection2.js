@@ -3,7 +3,7 @@ import recepe2 from '../images/recep2.png'
 import { Link } from 'react-router-dom';
 const RecipeSection = () => {
   return (
-< div className='pt-0' id='recipes'>
+< div className='pt-0' id='recipes' data-aos="fade-right" data-aos-once="false">
 <div className="flex md:flex-row flex-col justify-center items-center md:px-20 px-10 md:space-x-5 w-full md:pt-0 pt-10 md:h-screen">
       {/* Image Section */}
       <div className="md:w-1/2 w-full">

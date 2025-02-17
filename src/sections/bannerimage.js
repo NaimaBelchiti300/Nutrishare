@@ -3,7 +3,7 @@ import imgbanner from "../images/Bannerimage.png";
 
 export default function BannerImage() {
   return (
-    <div className="relative h-screen md:px-20 px-3 md:py-10 py-5 ">
+    <div className="relative h-screen md:px-20 px-3 md:py-10 py-5 " data-aos="zoom-in" data-aos-once="false">
       <img 
         src={imgbanner} 
         className="w-full object-cover h-full rounded-xl inset-0 filter brightness-75" 

@@ -76,7 +76,7 @@ const Populairerecepe = () => {
   };
 
   return (
-    <div className="  md:px-14  w-full h-full pt-16 ">
+    <div className="  md:px-14  w-full h-full pt-16 " data-aos="fade-in" data-aos-once="false">
       <h1 className="text-center font-serif md:text-4xl text-xl font-semibold text-verte">
         {" "}
         les recette les plus popolaires
@@ -92,6 +92,7 @@ const Populairerecepe = () => {
           <div
             key={index}
             className="flex md:justify-start justify-center items-center px-10 md:px-20 pt-3 w-full"
+            data-aos="zoom-in" data-aos-once="false"
           >
             <div className="bg-white rounded-xl shadow-md overflow-hidden w-96 space-x-0">
               <img

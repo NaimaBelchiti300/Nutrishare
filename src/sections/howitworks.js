@@ -5,14 +5,14 @@ import step3 from "../images/step3.PNG";
 
 export default function HowItWorks() {
   return (
-    <div className="px-5 md:px-20 py-16 bg-gray-50" id="how-it-works">
+    <div className="px-5 md:px-20 py-16 bg-gray-50" id="how-it-works" data-aos="fade-out" data-aos-once="false">
       {/* Titre principal */}
       <h1 className="text-center text-4xl md:text-5xl font-extrabold text-gray font-serif mb-16">
         Comment ça marche ?
       </h1>
 
       {/* Étape 1 */}
-      <div className="flex flex-col md:flex-row items-center md:space-x-14 space-y-10 md:space-y-0">
+      <div className="flex flex-col md:flex-row items-center md:space-x-14 space-y-10 md:space-y-0" data-aos="fade-left" data-aos-once="false">
         <img 
           src={step1} 
           className="w-full md:w-1/2 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" 
@@ -43,7 +43,7 @@ export default function HowItWorks() {
       </div>
 
       {/* Étape 2 */}
-      <div className="flex flex-col md:flex-row-reverse items-center md:space-x-14 space-y-10 md:space-y-0 mt-20">
+      <div className="flex flex-col md:flex-row-reverse items-center md:space-x-14 space-y-10 md:space-y-0 mt-20" data-aos="fade-right" data-aos-once="false">
         <img 
           src={step2} 
           className="w-full md:w-1/2 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" 
@@ -73,7 +73,7 @@ export default function HowItWorks() {
       </div>
 
       {/* Étape 3 */}
-      <div className="flex flex-col md:flex-row items-center md:space-x-14 space-y-10 md:space-y-0 mt-20">
+      <div className="flex flex-col md:flex-row items-center md:space-x-14 space-y-10 md:space-y-0 mt-20" data-aos="fade-left" data-aos-once="false">
         
         <img 
           src={step3} 

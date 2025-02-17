@@ -42,7 +42,7 @@ export default function ReviewsCarousel() {
   };
 
   return (
-    <div className="md:px-20 px-5 pt-16 w-full h-auto space-y-16" id="reviews">
+    <div className="md:px-20 px-5 pt-16 w-full h-auto space-y-16" id="reviews" data-aos="zoom-out" data-aos-once="false">
        <div className="flex flex-col justify-center items-center space-y-2">
        <h1 className="text-gray md:text-4xl text-xl text-center font-serif font-bold">Découvrez ce que pensent nos utilisateurs</h1>
        <span className="font-semibold md:text-2xl text-md font-serif text-verte text-center">Les avis de notre communauté</span>
