@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import imgbanner from "../images/Bannerimage.png";
 
 export default function BannerImage() {
@@ -14,12 +15,17 @@ export default function BannerImage() {
           Transformez votre quotidien avec NutriShare  l'application qui vous aide à manger équilibré, suivre vos calories et atteindre vos objectifs de santé en toute simplicité !
         </p>
         <div className="flex justify-center items-center space-x-10 pt-10">
+          <Link to="/under">
           <button className="w-96 py-3 bg-white font-serif text-gray rounded-full">
           Commencez à suivre votre alimentation
           </button>
+          </Link>
+          <Link to="/under">
           <button className="w-96 py-3 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
           Rejoignez NutriShare
           </button>
+          </Link>
+          
         </div>
       </div>
     </div>

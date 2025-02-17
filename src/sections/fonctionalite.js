@@ -11,6 +11,16 @@ export default function Fonctionalite() {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-10">
+          {/* Carte 5 */}
+          <div className="border border-graylight p-5 rounded-xl shadow-md ">
+          <div className="flex items-center space-x-3 mb-3">
+            <img src={icon5} className="w-10" alt="Icon" />
+            <h2 className="font-semibold text-xl font-lora">Créez votre profil et connectez-vous</h2>
+          </div>
+          <p className="text-gray font-serif">
+            Personnalisez votre profil, suivez d'autres utilisateurs, échangez des conseils et sauvegardez vos recettes préférées dans une communauté active et bienveillante.
+          </p>
+        </div>
         {/* Carte 1 */}
         <div className="border border-graylight p-5 rounded-xl shadow-md">
           <div className="flex items-center space-x-3 mb-3">
@@ -55,16 +65,7 @@ export default function Fonctionalite() {
           </p>
         </div>
 
-        {/* Carte 5 */}
-        <div className="border border-graylight p-5 rounded-xl shadow-md ">
-          <div className="flex items-center space-x-3 mb-3">
-            <img src={icon5} className="w-10" alt="Icon" />
-            <h2 className="font-semibold text-xl font-lora">Créez votre profil et connectez-vous</h2>
-          </div>
-          <p className="text-gray font-serif">
-            Personnalisez votre profil, suivez d'autres utilisateurs, échangez des conseils et sauvegardez vos recettes préférées dans une communauté active et bienveillante.
-          </p>
-        </div>
+      
       </div>
     </div>
   );

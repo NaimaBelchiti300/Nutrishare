@@ -16,8 +16,8 @@ export default function Home (){
             <Navbar/>
         <Herosection />
         <Fonctionalite />
-        <HowItWorks />
         <BannerImage />
+        <HowItWorks />
         <Recipes />
         <RecipeSection />
         <VidioImage />

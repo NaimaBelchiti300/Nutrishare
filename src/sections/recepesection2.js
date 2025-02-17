@@ -1,5 +1,6 @@
 import React from 'react';
 import recepe2 from '../images/recep2.png'
+import { Link } from 'react-router-dom';
 const RecipeSection = () => {
   return (
 < div className='pt-0' id='recipes'>
@@ -42,7 +43,10 @@ const RecipeSection = () => {
     </div>
     {/* Buttons */}
     <div className="flex justify-start items-center space-x-10 w-full px-32 pt-10">
-    <button className="text-lg px-9 py-3 bg-verte rounded-lg text-white hover:bg-gray-700 transition duration-300 font-serif w-full">Voir plus de recettes</button>
+      <Link to='/under' className='w-full'>
+      <button className="text-lg px-9 py-2 bg-verte rounded-lg text-white hover:bg-gray-700 transition duration-300 font-serif w-full">Voir plus de recettes</button>
+
+      </Link>
   </div>
 </div>
   );

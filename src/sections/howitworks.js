@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import step1 from "../images/step1.jpg";
 import step2 from "../images/step22.png";
 import step3 from "../images/step3.PNG";
@@ -26,12 +27,17 @@ export default function HowItWorks() {
             Si vous êtes nouveau, créez un compte en quelques clics !
           </p>
           <div className="flex flex-row space-x-6">
+            <Link to="/under">
             <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
               Commencez maintenant
             </button>
+            </Link>
+            <Link to="/under">
             <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
               Inscrivez-vous
             </button>
+            </Link>
+           
           </div>
         </div>
       </div>
@@ -51,12 +57,17 @@ export default function HowItWorks() {
             Découvrez des centaines de recettes adaptées à vos besoins. Vous pouvez également ajouter vos propres recettes et les partager avec d'autres utilisateurs.
           </p>
           <div className="flex flex-row space-x-6">
+            <Link to='/under'>
             <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
               Explorez les recettes
             </button>
-            <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
+            </Link>
+          <Link to='/under'>
+          <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
               Ajoutez une recette
             </button>
+          </Link>
+           
           </div>
         </div>
       </div>
@@ -78,12 +89,17 @@ export default function HowItWorks() {
             Ajoutez vos repas au journal alimentaire et suivez votre apport calorique et nutritionnel en un coup d'œil.
           </p>
           <div className="flex flex-row space-x-6">
+            <Link to='/under'>
             <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
               Démarrer le suivi
             </button>
-            <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
+            </Link>
+           <Link to='/under'>
+           <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
               Consulter mon journal
             </button>
+           </Link>
+           
           </div>
         </div>
       </div>

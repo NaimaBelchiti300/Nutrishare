@@ -1,8 +1,13 @@
+import { useState } from "react";
 import logo from "../images/logo.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-scroll'; // Import Link from react-scroll
 
 export default function Footer() {
+  const [email, setEmail] = useState('');
+  const handlclikc=()=>{
+setEmail('')
+  }
   return (
     <div className="w-full h-auto bg-graylight">
       <div className="grid grid-cols-3 gap-0 px-10 py-10">
@@ -20,8 +25,8 @@ export default function Footer() {
         </div>
 
         {/* Section 2 : Navigation rapide */}
-        <div className="flex flex-col justify-start items-center space-y-5 font-serif font-bold text-lg text-gray">
-          <div className="text-start flex flex-col ">
+        <div className="flex flex-col justify-start items-center  font-serif font-bold text-lg text-gray">
+          <div className="text-start flex flex-col space-y-4 pt-3">
            <Link to="home" smooth={true} duration={500} className='cursor-pointer'>Accueil</Link>
                       <Link to="features" smooth={true} duration={500} className='cursor-pointer'>Fonctionnalités</Link>
                       <Link to="how-it-works" smooth={true} duration={500} className='cursor-pointer'>Comment ça fonctionne</Link>
@@ -44,8 +49,10 @@ export default function Footer() {
               type="email"
               placeholder="Entrez votre email"
               className="bg-white py-3 rounded-md w-full focus:bg-white px-5 text-start"
+              value={email}
+              onChange={e=>setEmail(e.target.value)}
             />
-            <button className="font-serif w-60 rounded-md py-3 text-graylight bg-verte px-0 text-sm">
+            <button className="font-serif w-60 rounded-md py-3 text-graylight bg-verte px-0 text-sm" onClick={handlclikc}>
               S'abonner
             </button>
           </div>

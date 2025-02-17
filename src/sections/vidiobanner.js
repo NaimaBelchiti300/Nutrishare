@@ -1,5 +1,6 @@
 import React from "react";
 import videoBanner from "../images/5950368-hd_1920_1080_25fps.mp4"; // Replace with the actual path to your video
+import { Link } from "react-router-dom";
 // 6658171-uhd_4096_2160_25fps
 // 4940682-hd_1920_1080_24fps
 export default function VidioImage() {
@@ -19,13 +20,18 @@ export default function VidioImage() {
           Gardez le contrôle sur vos repas avec <span className=" text-verte font-serif text-6xl">NutriShare</span>{" "}
         </p>
         <div className="flex justify-center items-center space-x-10 pt-10">
-        <button className="w-96 py-3 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
+          <Link to='/under'>
+          <button className="w-96 py-3 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
           Analyser Mes Repas{" "} 
           </button>
-          <button className="w-96 py-3 bg-white font-serif text-gray rounded-full">
+          </Link>
+      <Link to='/under'>
+      <button className="w-96 py-3 bg-white font-serif text-gray rounded-full">
                        Découvrir NutriShare{" "}
 
           </button>
+      </Link>
+          
          
         </div>
       </div>
