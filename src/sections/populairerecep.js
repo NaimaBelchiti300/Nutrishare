@@ -76,12 +76,12 @@ const Populairerecepe = () => {
   };
 
   return (
-    <div className="  px-14 w-full h-full pt-16 ">
-      <h1 className="text-center font-serif text-4xl font-semibold text-verte">
+    <div className="  md:px-14  w-full h-full pt-16 ">
+      <h1 className="text-center font-serif md:text-4xl text-xl font-semibold text-verte">
         {" "}
         les recette les plus popolaires
       </h1>
-      <div className="flex justify-end items-end pt-20">
+      <div className="flex justify-end items-end pt-20 md:pl-0 pr-5">
       <Link to='/under' className="underline font-serif font-bold text-sm text-gray-500">
   voir toutes les recettes
 </Link>
@@ -91,7 +91,7 @@ const Populairerecepe = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="flex justify-start items-center px-20 pt-3 w-full"
+            className="flex md:justify-start justify-center items-center px-10 md:px-20 pt-3 w-full"
           >
             <div className="bg-white rounded-xl shadow-md overflow-hidden w-96 space-x-0">
               <img

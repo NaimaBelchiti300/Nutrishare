@@ -3,12 +3,12 @@ import imagebanner from "../images/Beige_Black_Simple_Modern_Healthy_Food_Introd
 
 export default function Herosection() {
   return (
-    <div className="flex justify-center items-center font-lora space-x-5 pt-0">
-      <div className="w-1/2 space-y-7 pt-5">
-        <h1 className="text-4xl font-extrabold text-gray  font-serif">
+    <div className="flex md:flex-row flex-col justify-center items-center font-lora space-x-5 pt-0" id="home">
+      <div className="md:w-1/2 w-full space-y-7 md:pt-5 pt-36">
+        <h1 className="md:text-4xl text-xl font-extrabold text-gray md:text-start text-center font-serif">
           NutriShare – Partagez vos recettes et suivez votre nutrition
         </h1>
-        <p className="w-13/12  font-medium text-lg">
+        <p className="md:w-13/12 w-full md:px-0 px-5 font-medium md:text-lg text-md md:text-start text-center">
           NutriShare est une plateforme dédiée à la gestion de l'alimentation et
           du bien-être, permettant aux utilisateurs de partager des recettes, de
           suivre leur consommation de calories et de macronutriments, et
@@ -18,16 +18,16 @@ export default function Herosection() {
           votre santé. NutriShare offre également un calculateur de calories
           intégré pour chaque recette.
         </p>
-        <div className="flex flex-row space-x-5">
+        <div className="flex flex-row space-x-5 md:justify-start justify-center items-center">
           <Link to="/under">
             {" "}
-            <button className="w-auto px-7 py-3 bg-gray rounded-sm text-white">
+            <button className="w-auto px-7 py-3 bg-gray rounded-md text-white">
                         Commencez maintenant
               
             </button>
           </Link>
           <Link to='/under'>
-          <button className="w-auto px-7 py-3 bg-gray rounded-sm text-white">
+          <button className="w-auto px-7 py-3 bg-gray rounded-md text-white">
             Inscrivez-vous
           </button>
           </Link>
@@ -35,7 +35,7 @@ export default function Herosection() {
         </div>
       </div>
       <div className="">
-        <img src={imagebanner} className="pl-10 w-[100%] " />
+        <img src={imagebanner} className="md:pl-10 w-[100%] " />
       </div>
     </div>
   );

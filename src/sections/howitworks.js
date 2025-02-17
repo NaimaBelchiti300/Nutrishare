@@ -26,14 +26,14 @@ export default function HowItWorks() {
             Accédez à votre espace personnel en vous connectant avec vos identifiants.  
             Si vous êtes nouveau, créez un compte en quelques clics !
           </p>
-          <div className="flex flex-row space-x-6">
+          <div className="flex md:flex-row flex-col md:space-x-6 md:space-y-0 space-y-3">
             <Link to="/under">
-            <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
+            <button className="text-lg px-9 py-3 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
               Commencez maintenant
             </button>
             </Link>
             <Link to="/under">
-            <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
+            <button className="text-lg px-9 py-3 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
               Inscrivez-vous
             </button>
             </Link>
@@ -56,14 +56,14 @@ export default function HowItWorks() {
           <p className="text-xl text-gray leading-relaxed mb-6">
             Découvrez des centaines de recettes adaptées à vos besoins. Vous pouvez également ajouter vos propres recettes et les partager avec d'autres utilisateurs.
           </p>
-          <div className="flex flex-row space-x-6">
+          <div className="flex md:flex-row flex-col md:space-x-6 md:space-y-0 space-y-3">
             <Link to='/under'>
-            <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
+            <button className="text-lg px-9 py-3 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
               Explorez les recettes
             </button>
             </Link>
           <Link to='/under'>
-          <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
+          <button className="text-lg px-9 py-3 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
               Ajoutez une recette
             </button>
           </Link>
@@ -88,14 +88,14 @@ export default function HowItWorks() {
           <p className="text-xl text-gray leading-relaxed mb-6">
             Ajoutez vos repas au journal alimentaire et suivez votre apport calorique et nutritionnel en un coup d'œil.
           </p>
-          <div className="flex flex-row space-x-6">
+          <div className="flex md:flex-row flex-col md:space-x-6 md:space-y-0 space-y-3">
             <Link to='/under'>
-            <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
+            <button className="text-lg px-9 py-3 bg-gray rounded-lg text-white hover:bg-gray-900 transition duration-300">
               Démarrer le suivi
             </button>
             </Link>
            <Link to='/under'>
-           <button className="text-lg px-9 py-4 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
+           <button className="text-lg px-9 py-3 bg-gray rounded-lg text-white hover:bg-gray-700 transition duration-300">
               Consulter mon journal
             </button>
            </Link>

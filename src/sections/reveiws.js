@@ -42,10 +42,10 @@ export default function ReviewsCarousel() {
   };
 
   return (
-    <div className="px-20 pt-16 w-full h-auto space-y-16" id="reviews">
+    <div className="md:px-20 px-5 pt-16 w-full h-auto space-y-16" id="reviews">
        <div className="flex flex-col justify-center items-center space-y-2">
-       <h1 className="text-gray text-4xl text-center font-serif font-bold">Découvrez ce que pensent nos utilisateurs</h1>
-       <span className="font-semibold text-2xl font-serif text-verte text-center">Les avis de notre communauté</span>
+       <h1 className="text-gray md:text-4xl text-xl text-center font-serif font-bold">Découvrez ce que pensent nos utilisateurs</h1>
+       <span className="font-semibold md:text-2xl text-md font-serif text-verte text-center">Les avis de notre communauté</span>
        </div>
         <div className="w-full max-w-6xl mx-auto p-12 bg-gradient-to-r from-green-950 to-verte rounded-3xl  shadow-2xl text-center relative overflow-hidden">
       <AnimatePresence mode="wait">
@@ -57,8 +57,8 @@ export default function ReviewsCarousel() {
           transition={{ duration: 0.5 }}
           className="bg-white p-16 rounded-3xl shadow-lg"
         >
-          <p className="text-4xl font-extrabold font-serif text-gray">{reviews[index].name}</p>
-          <p className="text-gray-600 italic mt-4 text-xl">"{reviews[index].text}"</p>
+          <p className="md:text-4xl text-xl font-extrabold font-serif text-gray">{reviews[index].name}</p>
+          <p className="text-gray-600 italic mt-4 md:text-xl text-sm">"{reviews[index].text}"</p>
         
         </motion.div>
       </AnimatePresence>

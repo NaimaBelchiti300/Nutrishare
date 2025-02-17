@@ -32,9 +32,9 @@ export default function FormReviews() {
   };
 
   return (
-    <div className="w-full pt-28 flex flex-row space-x-5 px-20">
-      <div className="w-2/2">
-        <div className="grid grid-cols-2 gap-2">
+    <div className="w-full pt-28 flex md:flex-row  flex-col md:space-x-5 space-y-0  md:px-20 px-10 md:pb-0 pb-11">
+      <div className="md:w-2/2 ">
+        <div className="grid grid-cols-2  gap-2">
           <div className="grid grid-rows-3 gap-0 pt-14">
             <div className="w-full">
               <img src={f1} className="w-full rounded-xl" />
@@ -49,12 +49,12 @@ export default function FormReviews() {
         </div>
       </div>
 
-      <div className="w-1/2 space-y-5 pt-14">
+      <div className="md:w-1/2 w-full space-y-5 md:pt-14 ">
         <div className="space-y-1">
-          <h1 className="font-bold font-serif text-4xl text-gray">
+          <h1 className="font-bold font-serif md:text-4xl text-xl text-gray">
             Nous Aimerions Avoir Votre Avis
           </h1>
-          <p className="text-lg w-11/12 font-serif">
+          <p className="md:text-lg text-md w-11/12 font-serif">
             Votre retour est précieux pour nous. Partagez votre expérience et
             aidez-nous à nous améliorer.
           </p>

@@ -12,7 +12,7 @@ import Footer from "./footer";
 import ReviewsCarousel from "./reveiws";
 export default function Home (){
     return(
-        <div>
+        <div className="overflow-x-hidden">
             <Navbar/>
         <Herosection />
         <Fonctionalite />

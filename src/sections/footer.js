@@ -10,14 +10,14 @@ setEmail('')
   }
   return (
     <div className="w-full h-auto bg-graylight">
-      <div className="grid grid-cols-3 gap-0 px-10 py-10">
+      <div className="grid md:grid-cols-3 gap-0 px-10 md:py-10 py-5 md:space-y-0  space-y-4">
         {/* Section 1 : Logo & À propos */}
         <div className="w-full">
           <div>
-            <img src={logo} alt="NutriShare Logo"  />
+            <img src={logo} alt="NutriShare Logo"   />
           </div>
           <div className="mt-5 text-gray text-lg font-serif">
-            <p className="  w-12/12 text-md pl-2 font-serif font-bold">
+            <p className="  w-12/12 text-md md:pl-2 font-serif font-bold">
               NutriShare vous aide à adopter une alimentation équilibrée grâce à des recettes 
               saines, des conseils nutritionnels et un suivi personnalisé.
             </p>
@@ -25,7 +25,7 @@ setEmail('')
         </div>
 
         {/* Section 2 : Navigation rapide */}
-        <div className="flex flex-col justify-start items-center  font-serif font-bold text-lg text-gray">
+        <div className="flex flex-col justify-start items-center  font-serif font-bold text-lg text-gray md:pr-0 pr-44">
           <div className="text-start flex flex-col space-y-4 pt-3">
            <Link to="home" smooth={true} duration={500} className='cursor-pointer'>Accueil</Link>
                       <Link to="features" smooth={true} duration={500} className='cursor-pointer'>Fonctionnalités</Link>
@@ -36,11 +36,11 @@ setEmail('')
         </div>
 
         {/* Section 3 : Newsletter */}
-        <div className="space-y-3">
-          <h1 className="font-bold font-serif text-3xl text-gray">
+        <div className="space-y-3 md:pt-0 pt-5">
+          <h1 className="font-bold font-serif md:text-3xl text-lg text-gray">
             Abonnez-vous à notre Newsletter
           </h1>
-          <p className="w-12/12 text-md pl-2 font-serif text-gray font-semibold">
+          <p className="w-12/12 text-md md:pl-2 font-serif text-gray md:font-semibold">
             Recevez des astuces nutritionnelles, des recettes saines et des conseils personnalisés 
             directement dans votre boîte mail. Inscrivez-vous maintenant pour rester en forme et bien nourri !
           </p>
@@ -64,7 +64,7 @@ setEmail('')
         <span className="h-[0.1px] block bg-gray"></span>
       </div>
    
-      <div className="flex justify-between items-center px-28 pb-5 pt-10">
+      <div className="flex md:flex-row flex-col md:space-y-0 space-y-5 justify-between items-center md:px-28 px-10 pb-5 pt-10">
       <p className="text-gray text-sm font-serif font-semibold">
           © 2025 NutriShare. Tous droits réservés.
         </p>

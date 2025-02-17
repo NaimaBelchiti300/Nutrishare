@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
-import { FiMenu, FiX } from 'react-icons/fi'; // Import icons
+import { Link } from 'react-scroll';
+import { FiMenu, FiX } from 'react-icons/fi';
 import logo from "../images/logo.png";
 
 export default function Navbar() {
@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-between items-center  md:px-12 py-3 font-serif ">
+      <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-between items-center md:px-12 py-3 font-serif">
         {/* Logo */}
         <div>
           <img src={logo} className="" alt="logo" />
@@ -37,7 +37,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-14 pt-12 left-0 w-full font-serif bg-white shadow-lg flex flex-col items-center space-y-4 py-5 text-md font-bold">
+        <div className="md:hidden fixed top-14 left-0 w-full bg-white shadow-lg flex flex-col items-center space-y-4 py-5 text-md font-bold z-50">
           <Link to="home" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>Accueil</Link>
           <Link to="features" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>Fonctionnalités</Link>
           <Link to="how-it-works" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>Comment ça fonctionne</Link>
