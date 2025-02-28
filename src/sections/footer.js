@@ -10,7 +10,7 @@ setEmail('')
   }
   return (
     <div className="w-full h-auto bg-graylight">
-      <div className="grid md:grid-cols-3 gap-0 px-10 md:py-10 py-5 md:space-y-0  space-y-4">
+      <div className="grid md:grid-cols-3 gap-0 md:px-10 px-5 md:py-10 py-5 md:space-y-0  space-y-4">
         {/* Section 1 : Logo & À propos */}
         <div className="w-full">
           <div>

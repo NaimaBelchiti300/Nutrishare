@@ -12,14 +12,14 @@ export default function BannerImage() {
       <p className="font-serif font-bold md:text-5xl text-lg md:px-24 px-4 text-center text-white">
           Transformez votre quotidien avec NutriShare  l'application qui vous aide à manger équilibré, suivre vos calories et atteindre vos objectifs de santé en toute simplicité !
         </p>
-        <div className="flex md:flex-row flex-col md:space-y-0 space-y-5 justify-center items-center md:space-x-10 pt-10 text-lg">
+        <div className="flex md:flex-row flex-col md:space-y-0 space-y-5 justify-center items-center md:space-x-10 pt-10">
           <Link to="/under">
-          <button className="md:w-96 w-full md:px-0 px-3 py-2 md:py-3 bg-white font-serif text-gray rounded-full">
+          <button className="md:w-96 w-full text-sm md:px-0 px-3 py-2 md:py-3 bg-white font-serif text-gray rounded-full">
           Commencez à suivre votre alimentation
           </button>
           </Link>
           <Link to="/under">
-          <button className="md:w-96 md:py-3 py-2 w-full  md:px-0 px-3 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
+          <button className="md:w-96 md:py-3 py-2 text-sm w-full  md:px-0 px-3 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
           Rejoignez NutriShare
           </button>
           </Link>

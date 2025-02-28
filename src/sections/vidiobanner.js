@@ -21,12 +21,12 @@ export default function VidioImage() {
         </p>
         <div className="flex md:flex-row flex-col justify-center items-center md:space-x-10 md:pt-10 pt-2 md:space-y-0 space-y-2">
           <Link to='/under'>
-          <button className="md:w-96 md:py-3 py-2 md:px-0 px-6 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
+          <button className="md:w-96 md:py-3 text-sm py-1 md:px-0 px-6 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
           Analyser Mes Repas{" "} 
           </button>
           </Link>
       <Link to='/under'>
-      <button className="md:w-96 md:py-3 py-2 md:px-0 px-6 bg-white font-serif text-gray rounded-full">
+      <button className="md:w-96 md:py-3 py-1 text-sm md:px-0 px-6 bg-white font-serif text-gray rounded-full">
                        Découvrir NutriShare{" "}
 
           </button>
