@@ -18,16 +18,15 @@ import Footer from "./footer";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Durée de l'animation
-      offset: 200, // Déclenche l'animation lorsqu'il est à 200px de la fenêtre
-      easing: "ease-in-out", // Type d'animation
-      once: false, // Animation se répète chaque fois que l'élément entre dans la vue
+      duration: 1000, 
+      offset: 200, 
+      easing: "ease-in-out", 
+      once: false, 
     });
 
-    // Re-réfresh les animations après chaque scroll
+    
     window.addEventListener("scroll", () => AOS.refresh());
 
-    // Nettoyer l'événement lorsque le composant est démonté
     return () => {
       window.removeEventListener("scroll", () => AOS.refresh());
     };

@@ -32,8 +32,8 @@ export default function FormReviews() {
   };
 
   return (
-    <div className="w-full pt-28 flex md:flex-row  flex-col md:space-x-5 space-y-0  md:px-20 px-10 md:pb-0 pb-11" data-aos="fade-in" data-aos-once="false">
-      <div className="md:w-2/2 " data-aos="fade-left" data-aos-once="false">
+    <div className="w-full pt-28 flex md:flex-row  flex-col md:space-x-5 space-x-0 space-y-0  md:px-20 px-5 md:pb-0 pb-11" data-aos="fade-in" data-aos-once="false">
+      <div className="md:w-2/2 w-full" data-aos="fade-left" data-aos-once="false">
         <div className="grid grid-cols-2  gap-2">
           <div className="grid grid-rows-3 gap-0 pt-14">
             <div className="w-full">

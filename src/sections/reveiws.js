@@ -28,8 +28,8 @@ const reviews = [
       text: "Enfin une application qui m'aide vraiment à comprendre l'impact de mon alimentation sur ma santé. L'interface est fluide et agréable, et le suivi des repas est super facile.",
       rating: 4,
     }
-  ];
-  
+];
+
 export default function ReviewsCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -43,33 +43,46 @@ export default function ReviewsCarousel() {
 
   return (
     <div className="md:px-20 px-5 pt-16 w-full h-auto space-y-16" id="reviews" data-aos="zoom-out" data-aos-once="false">
-       <div className="flex flex-col justify-center items-center space-y-2">
-       <h1 className="text-gray md:text-4xl text-xl text-center font-serif font-bold">Découvrez ce que pensent nos utilisateurs</h1>
-       <span className="font-semibold md:text-2xl text-md font-serif text-verte text-center">Les avis de notre communauté</span>
-       </div>
-        <div className="w-full max-w-6xl mx-auto p-12 bg-gradient-to-r from-green-950 to-verte rounded-3xl  shadow-2xl text-center relative overflow-hidden">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          transition={{ duration: 0.5 }}
-          className="bg-white p-16 rounded-3xl shadow-lg"
+      <div className="flex flex-col justify-center items-center space-y-2">
+        <h1 className="text-gray md:text-4xl text-xl text-center font-serif font-bold">
+          Découvrez ce que pensent nos utilisateurs
+        </h1>
+        <span className="font-semibold md:text-2xl text-md font-serif text-verte text-center">
+          Les avis de notre communauté
+        </span>
+      </div>
+      <div className="w-full max-w-3xl mx-auto p-8 bg-gradient-to-r from-green-950 to-verte rounded-3xl shadow-2xl text-center relative overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white p-12 rounded-3xl shadow-lg"
+          >
+            <p className="md:text-3xl text-xl font-extrabold font-serif text-gray">
+              {reviews[index].name}
+            </p>
+            <p className="text-gray-600 italic mt-4 md:text-lg text-sm">
+              "{reviews[index].text}"
+            </p>
+          </motion.div>
+        </AnimatePresence>
+
+        <button
+          onClick={prevReview}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-5 rounded-full shadow-md hover:bg-gray-200 transition"
         >
-          <p className="md:text-4xl text-xl font-extrabold font-serif text-gray">{reviews[index].name}</p>
-          <p className="text-gray-600 italic mt-4 md:text-xl text-sm">"{reviews[index].text}"</p>
-        
-        </motion.div>
-      </AnimatePresence>
-      
-      <button onClick={prevReview} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-5 rounded-full shadow-md hover:bg-gray-200 transition">
-        <ChevronLeft size={40} className="text-gray" />
-      </button>
-      <button onClick={nextReview} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-5 rounded-full shadow-md hover:bg-gray-200 transition">
-        <ChevronRight size={40} className="text-gray" />
-      </button>
-    </div>
+          <ChevronLeft size={40} className="text-gray" />
+        </button>
+        <button
+          onClick={nextReview}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-5 rounded-full shadow-md hover:bg-gray-200 transition"
+        >
+          <ChevronRight size={40} className="text-gray" />
+        </button>
+      </div>
     </div>
   );
 }

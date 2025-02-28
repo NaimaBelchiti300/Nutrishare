@@ -8,18 +8,18 @@ export default function Herosection() {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
-      duration: 1000, // Durée de l'animation
-      easing: "ease-in-out", // Easing de l'animation
-      once: false, // Animations trigger multiple times
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: false, 
     });
 
-    // Add a scroll listener to refresh AOS when scrolling
+ 
    })
   
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center font-lora space-x-5 pt-0" id="home" data-aos="fade-up">
+    <div className="flex md:flex-row flex-col justify-center items-center font-lora md:space-x-5 pt-0" id="home" data-aos="fade-up">
       <div className="md:w-1/2 w-full space-y-7 md:pt-5 pt-36">
-        <h1 className="md:text-4xl text-xl font-extrabold text-gray md:text-start text-center font-serif">
+        <h1 className="md:text-4xl text-lg font-extrabold text-gray md:text-start text-center font-serif">
           NutriShare – Partagez vos recettes et suivez votre nutrition
         </h1>
         <p className="md:w-13/12 w-full md:px-0 px-5 font-medium md:text-lg text-md md:text-start text-center">
@@ -32,7 +32,7 @@ export default function Herosection() {
           votre santé. NutriShare offre également un calculateur de calories
           intégré pour chaque recette.
         </p>
-        <div className="flex flex-row space-x-5 md:justify-start justify-center items-center">
+        <div className="flex md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-3 md:justify-start justify-center items-center">
           <Link to="/under">
             {" "}
             <button className="w-auto px-7 py-3 bg-gray rounded-md text-white">
@@ -49,7 +49,7 @@ export default function Herosection() {
         </div>
       </div>
       <div className="">
-        <img src={imagebanner} className="md:pl-10 w-[100%] " />
+        <img src={imagebanner} className="md:pl-10  w-[100%] " />
       </div>
     </div>
   );

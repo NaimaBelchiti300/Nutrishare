@@ -15,18 +15,18 @@ export default function VidioImage() {
         className="w-full object-cover h-full rounded-xl inset-0 filter brightness-90"
       />
 
-      <div className="absolute md:top-12 top-12 left-0 right-0 z-20 md:pt-36 flex flex-col justify-center items-center text-white md:text-xl text-md md:p-4">
-        <p className="font-lora font-bold md:text-7xl text-2xl md:px-24 px-5 text-center text-white">
+      <div className="absolute md:top-12 top-5 left-0 right-0 z-20 md:pt-36 flex flex-col justify-center items-center text-white md:text-xl text-md md:p-4">
+        <p className="font-lora font-bold md:text-7xl text-xl md:px-24 px-10 text-center text-white">
           Gardez le contrôle sur vos repas avec <span className=" text-verte font-serif md:text-6xl text-3xl">NutriShare</span>{" "}
         </p>
-        <div className="flex md:flex-row flex-col justify-center items-center md:space-x-10 md:pt-10 pt-5 md:space-y-0 space-y-2">
+        <div className="flex md:flex-row flex-col justify-center items-center md:space-x-10 md:pt-10 pt-2 md:space-y-0 space-y-2">
           <Link to='/under'>
-          <button className="md:w-96 py-2 md:px-0 px-12 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
+          <button className="md:w-96 md:py-3 py-2 md:px-0 px-6 border-2 font-serif bg-verte border-solid border-verte text-graylight rounded-full">
           Analyser Mes Repas{" "} 
           </button>
           </Link>
       <Link to='/under'>
-      <button className="md:w-96 py-2 md:px-0 px-12 bg-white font-serif text-gray rounded-full">
+      <button className="md:w-96 md:py-3 py-2 md:px-0 px-6 bg-white font-serif text-gray rounded-full">
                        Découvrir NutriShare{" "}
 
           </button>

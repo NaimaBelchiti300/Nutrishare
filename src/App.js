@@ -4,7 +4,7 @@ import Under from './sections/under';
 import Home from './sections/home';
 function App() {
   return (
-    <Router> {/* Assure-toi d'envelopper toute l'application avec Router */}
+    <Router> 
       <div>
         
         <Routes> 

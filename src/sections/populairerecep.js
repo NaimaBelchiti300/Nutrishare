@@ -46,29 +46,26 @@ const Populairerecepe = () => {
         button1: 'Temps à préparer : 1h30', 
         button2: 'Calories de la recette : 600kcal' 
     },
-
-    
-];
-
+  ];
 
   const settings = {
-    dots: true, // Afficher les points de navigation
-    infinite: true, // Le carrousel se répète
+    dots: true, 
+    infinite: true, 
     speed: 500,
-    slidesToShow: 3, // Afficher 3 cartes à la fois
-    slidesToScroll: 3, // Passer 3 cartes en même temps
+    slidesToShow: 3, 
+    slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1024, // Ajuster pour les écrans plus petits
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 2, // Afficher 2 cartes pour les écrans plus petits
-          slidesToScroll: 2,
+          slidesToShow: 3, 
+          slidesToScroll: 3,
         },
       },
       {
-        breakpoint: 640, // Ajuster pour les mobiles
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 1, // Afficher 1 carte pour les petits écrans
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },
@@ -76,44 +73,41 @@ const Populairerecepe = () => {
   };
 
   return (
-    <div className="  md:px-14  w-full h-full pt-16 " data-aos="fade-in" data-aos-once="false">
+    <div className="md:px-14 w-full h-full pt-16" data-aos="fade-in" data-aos-once="false">
       <h1 className="text-center font-serif md:text-4xl text-xl font-semibold text-verte">
-        {" "}
-        les recette les plus popolaires
+        Les recettes les plus populaires
       </h1>
       <div className="flex justify-end items-end pt-20 md:pl-0 pr-5">
-      <Link to='/under' className="underline font-serif font-bold text-sm text-gray-500">
-  voir toutes les recettes
-</Link>
-
+        <Link to='/under' className="underline font-serif font-bold text-sm text-gray-500">
+          Voir toutes les recettes
+        </Link>
       </div>
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div
             key={index}
-            className="flex md:justify-start justify-center items-center px-10 md:px-20 pt-3 w-full"
+            className="flex justify-center items-center px-5 md:px-10 pt-3 w-full"
             data-aos="zoom-in" data-aos-once="false"
           >
-            <div className="bg-white rounded-xl shadow-md overflow-hidden w-96 space-x-0">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden w-80 md:w-96">
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-80 object-cover"
+                className="w-full h-64 md:h-80 object-cover"
               />
               <div className="p-4 font-serif font-bold">
-                <h2 className="text-2xl font-bold text-gray">
+                <h2 className="text-xl md:text-2xl font-bold text-gray">
                   {card.title}
                 </h2>
-                <div className="flex flex-col justify-start items-start space-y-2">
                 <p className="text-gray-600 mt-3">{card.description}</p>
-                <div className="flex">
-                  
+                <div className="flex flex-col space-y-2 mt-3">
+                  <button className="border-solid border-2 border-verte px-5 py-2 text-gray rounded-md">
+                    {card.button2}
+                  </button>
+                  <button className="border-solid border-2 border-verte px-5 py-2 text-gray rounded-md">
+                    {card.button1}
+                  </button>
                 </div>
-                <button className="border-solid border-2 border-verte px-5 py-2 w-auto text-gray rounded-md whitespace-nowrap">{card.button2}</button>
-                <button className="border-solid border-2 border-verte px-5 py-2 w-auto  text-gray rounded-md whitespace-nowrap" >{card.button1}</button>
-               
-                </div>
-               
               </div>
             </div>
           </div>

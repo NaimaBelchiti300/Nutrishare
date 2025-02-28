@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const RecipeSection = () => {
   return (
 < div className='pt-0' id='recipes' data-aos="fade-right" data-aos-once="false">
-<div className="flex md:flex-row flex-col justify-center items-center md:px-20 px-10 md:space-x-5 w-full md:pt-0 pt-10 md:h-screen">
+<div className="flex md:flex-row flex-col justify-center items-center md:px-20 px-5 md:space-x-5 w-full md:pt-0 pt-10 md:h-screen">
       {/* Image Section */}
       <div className="md:w-1/2 w-full">
         <img src={recepe2} className="w-[100%] rounded-e-full" />
@@ -14,7 +14,7 @@ const RecipeSection = () => {
       {/* Text Content */}
       <div className="md:w-1/2 w-full space-y-5 mt-5">
         <h2 className="text-gray md:text-4xl text-xl  md:text-start text-center font-serif font-bold">Inspirez-vous des recettes de la communauté</h2>
-        <span className="md:text-2xl text-md md:text-start text-center font-medium  font-lora text-gray ">Recette de Toast Avocat & Œuf : Le Mélange Parfait pour Votre Santé !</span>
+        <span className="md:text-2xl text-md md:text-start  text-center font-medium  font-lora text-gray ">Recette de Toast Avocat & Œuf : Le Mélange Parfait pour Votre Santé !</span>
         <p className="text-gray font-medium font-lora w-12/12 md:text-start text-center ">Cette recette de toast avocat & œuf est une véritable bombe nutritionnelle, parfaite pour commencer votre journée ou comme encas sain. L'avocat est une source exceptionnelle de graisses saines, tandis que l'œuf apporte des protéines de haute qualité pour soutenir vos muscles. Ensemble, ces ingrédients vous offrent un mélange équilibré pour nourrir votre corps et booster votre énergie .</p>
         
         {/* Valeurs Nutritionnelles */}

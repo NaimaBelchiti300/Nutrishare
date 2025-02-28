@@ -37,7 +37,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed top-14 left-0 w-full bg-white shadow-lg flex flex-col items-center space-y-4 py-5 text-md font-bold z-50">
+        <div className="md:hidden fixed top-14  left-0 w-full bg-white shadow-lg flex flex-col items-center space-y-4 py-5 text-md font-bold z-50">
           <Link to="home" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>Accueil</Link>
           <Link to="features" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>Fonctionnalités</Link>
           <Link to="how-it-works" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>Comment ça fonctionne</Link>
