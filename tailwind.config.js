@@ -12,7 +12,9 @@ module.exports = {
       colors: {
         verte: '#8CA658',
         gray: '#424242',
-        graylight:'#E8E8E8'
+        graylight:'#E8E8E8',
+        orange:'#FFA726',
+        shadow:'#E4E3E8'
       },
     },
   },
